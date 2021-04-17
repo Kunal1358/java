@@ -1,0 +1,33 @@
+
+\n -> new Line
+        (" a \n b")
+        a
+        b
+
+\r -> return carraige
+        (" aqqq \n badsadsad")
+        badsadsad
+
+\f -> free formed
+        ("a \f b")
+        a  b // symbol
+
+\b -> backspace
+       ("123\b45")
+       1245
+
+\t -> tab
+      ("123\t45")
+      123	45
+
+\" -> double quotes
+      ("123\"4\"5")
+      123"4"5
+
+\' -> single quotes
+      ("123\'4\'5")
+      123'4'5
+
+\\ -> backslash
+      ("123\\5")
+      123\5
