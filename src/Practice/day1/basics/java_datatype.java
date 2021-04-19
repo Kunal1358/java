@@ -14,7 +14,7 @@ public class java_datatype {
 There are 2 data types
 
 Primitive     -> byte,int,short,float etc
-non primitive -> classes,interface and arrays
+non primitive -> classes,interface and arrays (Reference/Object Data Types)
 
 
 primitive data types are the predefined data types of Java. They specify the size and type of any standard values
@@ -47,7 +47,5 @@ Default Data Type
 Suffix
     Float  -> It uses F or f as a suffix. It is mandatory to add a suffix if you are declaring a float variable.
     Double -> It uses d or D as a suffix. It is optional to add a suffix if you are declaring a double variable.
-
-
 
  */
