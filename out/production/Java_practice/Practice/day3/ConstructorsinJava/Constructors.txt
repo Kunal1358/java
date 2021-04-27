@@ -1,0 +1,20 @@
+Constructor ->
+        In java Constructor is a block of code similar to the method.
+        It is called when ever an instance of class is created.
+        At the time of calling constructor memory for the object is created in the memory.
+
+Every time an object is created using int new keyword. At least one constructor is called.
+It calls a default constructor if there is no constructor java calls the default constructor.
+
+Rules ->
+        Constructor name should be same as class name.
+        Should have no return type.
+        Can't be static, final, abstract and synchronized.
+
+Types of Constructors ->
+        Default constructor ( Without Parameters )
+        Parameterized constructor.
+
+
+
+
