@@ -1,0 +1,11 @@
+
+Super
+    super keyword is an reference variable used to refer immediate parent class object.
+
+whenever we create a instance of sub-class, an instance of parent class is
+ create implicitly called which is referred by super variable.
+
+uses of super
+    used to call immediate parent class object.
+    used to invoke immediate parent class methods.
+    super() can be used to invoke parent class Ctr.

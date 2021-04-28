@@ -1,0 +1,67 @@
+
+Inheritance ->
+              Inheritance in java is a mechanism in which one object acquires all the
+              properties and behaviour of parent object.
+
+    The idea behind Inheritance is that you create new class that are build upon existing
+        class you can reuse methods and fields of the parent class.
+
+    Inheritance represents IS-A relationship which is also known as prent-child relationship.
+
+
+Why we use Inheritance ?
+        Code Reusability.
+        Method overriding ( to achieve runtime polymorphism)
+
+Terms used in Inheritance
+        Class - > it is a template or blueprint from which objects are created.
+        sub/child class  -> class which inherits the other class.
+        super/parent class -> class from which sub class inherits its features.
+        Reusability ->  Inheritance supports the concept of “reusability”, i.e.
+        when we want to create a new class and there is already a class that includes
+        some of the code that we want, we can derive our new class from the existing class.
+         By doing this, we are reusing the fields and methods of the existing class.
+
+Syntax
+    class child-class extends parent class{
+
+    }
+
+** Go to Code1 **
+
+
+Types of Inheritance
+
+Single Inheritance
+        In single Inheritance one class extends other class only.
+
+Multiple Inheritance
+        In multiple Inheritance one class extends more than one class.
+        Multiple Inheritance is not supported in java through class.
+
+MultiLevel Inheritance
+        In Multilevel Inheritance one class inherits from base class.
+        Hence the base class becomes the parent class for the other class.
+
+Hierarchical Inheritance
+        In hierarchical Inheritance one class is inherited by many sub classes.
+
+Hybrid Inheritance
+        Combination of two types of Inheritance.
+
+
+Why multiple inheritance is not supported in java?
+
+        To reduce the complexity and simplify the language, multiple inheritance is not supported in java.
+
+        Consider a scenario where A, B, and C are three classes. The C class inherits A and B classes.
+        If A and B classes have the same method and you call it from child class object, there will be
+        ambiguity to call the method of A or B class.
+
+        Since compile-time errors are better than runtime errors, Java renders compile-time error
+         if you inherit 2 classes. So whether you have same method or different, there will be compile time error.
+
+Super Keyword
+        It is used to differentiate between the members of super and sub class.
+        Used to invoke super-class constructor from sub-class.
+
