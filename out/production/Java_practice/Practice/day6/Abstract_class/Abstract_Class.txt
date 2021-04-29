@@ -1,0 +1,31 @@
+Abstract Class
+    Class declared with Abstract keyword is known as abstract class.
+    It can have abstract and non-abstract methods.
+
+Abstraction
+        It is a process of hiding the implementation details and showing functionality to user
+
+Ways to Achieve ?
+    Abstract Class ( 0 to 100 % )
+    Interface ( 100 % )
+
+** Abstract class cannot be instantiated **
+
+** We cant provide the body of abstract methods. **
+
+
+Points to Remember
+    An abstract class must be declared with an abstract keyword.
+    It can have abstract and non-abstract methods.
+    It cannot be instantiated.
+    It can have constructors and static methods also.
+    It can have final methods which will force the subclass not to change the body of the method.
+
+
+Abstract Method
+    A method which is declared and does not have implementation.
+
+-> Example1
+-> Example2
+
+** If there is an abstract method in a class, that class must be abstract. **

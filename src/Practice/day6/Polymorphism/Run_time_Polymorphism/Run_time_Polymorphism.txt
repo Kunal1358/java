@@ -1,0 +1,4 @@
+ Runtime Polymorphism with Data Member
+        Methods is overridden ,Not the data members so run-time Polymorphism can be achieved by data-members.
+
+-> Code 1

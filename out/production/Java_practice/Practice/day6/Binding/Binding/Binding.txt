@@ -1,0 +1,13 @@
+Binding
+    Connecting a method call to the method body is called binding.
+
+Types
+    Static binding (early binding)
+    Dynamic binding (late binding)
+
+Static
+    when the type of object is determined at compile-time
+
+Dynamic
+    when the type of object is determined at run-time
+

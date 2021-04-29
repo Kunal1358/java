@@ -1,0 +1,19 @@
+Instance initializer block
+        It is used to initialize the instance data member. It runs each time the data member is created.
+
+-> Code
+
+Places where we can perform operations.
+    method
+    constructor
+    block
+
+-> Code 2
+
+
+Rules for instance initializer block
+    The instance initializer block is created when the instance of the class is called.
+    The instance initializer block is called when the parent class constructor is invoked
+    The instance initializer block comes in order in which they appear.
+
+-> Code 3

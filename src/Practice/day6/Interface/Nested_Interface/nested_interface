@@ -1,0 +1,9 @@
+Nested Interface
+    Interface inside Interface
+
+    interface printable{
+     void print();
+     interface MessagePrintable{
+       void msg();
+     }
+    }
