@@ -1,0 +1,20 @@
+
+Method Overriding
+    If a sub-class have same methods as parent class it is known as Method Overriding.
+
+Uses of Method Overriding
+    Used to provide a specific implementation of a method which is already provided by its super-class.
+    To achieve runtime polymorphism.
+
+
+Rules of Method Overriding
+    method must have same name as parent-class.
+    must have same parameters as parent-class.
+    there must be a IS-A relationship(Inheritance).
+
+-> Need_of_Method_Overriding
+
+-> Example 1
+
+
+

@@ -1,0 +1,21 @@
+
+Aggregation
+        If a class has an entity reference it is known as Aggregation.
+
+example
+
+    class Emp{
+    int id;
+    String name;
+    Address address // here Address  is a class.
+    }
+
+Why we use Aggregation ?
+    Code Reusability.
+
+
+when we use Aggregation
+       Code reuse is also best achieved by Aggregation when there is no is-a relationship.
+       Instance should only be used id the relationship is is-a is maintained throughout the
+        lifeline of object invoked. otherwise, aggregation is the best choice.
+

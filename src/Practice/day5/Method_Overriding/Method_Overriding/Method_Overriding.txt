@@ -1,0 +1,55 @@
+
+Method Overriding
+    If a sub-class have same methods as parent class it is known as Method Overriding.
+
+Uses of Method Overriding
+    Used to provide a specific implementation of a method which is already provided by its super-class.
+    To achieve runtime polymorphism.
+
+
+Rules of Method Overriding
+    method must have same name as parent-class.
+    must have same parameters as parent-class.
+    there must be a IS-A relationship(Inheritance).
+
+-> Need_of_Method_Overriding
+
+-> Example 1
+
+Can we override static methods?
+No, Static methods cannot be overridden. It can be proved by runtime polymorphism.
+
+Why can't we override static methods?
+    It is because static methods is bound with the class whereas instance method is bound with object.
+    static belongs to class area and an instance belong to heap area.
+
+
+
+Difference between method overloading and method overriding in java
+
+        Link - > https://www.javatpoint.com/method-overloading-vs-method-overriding-in-java
+
+
+No.	Method Overloading                        |         Method Overriding
+                                              |
+Method overloading is used to increase the    |         Method overriding is used to provide the
+readability of the program.                   |         specific implementation of the method that is already provided
+                                              |         by its super class.
+                                              |
+Method overloading is performed within        |         Method overriding occurs in two classes that have IS-A
+class.                                        |          (inheritance) relationship.
+                                              |
+In case of method overloading, parameter      |         In case of method overriding, parameter must be same.
+must be different.                            |
+	                                          |
+Method overloading is the example of          |         Method overriding is the example of run time polymorphism.
+compile time polymorphism                     |
+                                              |
+In java, method overloading can't be          |         Return type must be same or covariant in method overriding.
+performed by changing return type of          |
+the method only. Return type can be same      |
+or different in method overloading. But       |
+you must have to change the parameter.        |
+
+
+
