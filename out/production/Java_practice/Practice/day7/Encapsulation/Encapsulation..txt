@@ -1,0 +1,48 @@
+
+Encapsulation
+        in Java is a process of wrapping code and data together into a single unit,
+        for example, a capsule which is mixed of several medicines.
+
+
+Advantages
+        to achieve data hiding
+        provides control over the data
+        By providing only a setter or getter method, you can make the class read-only or write-only.
+         In other words, you can skip the getter or setter methods.
+
+-->Example1
+
+Read-Only class
+
+//A Java class which has only getter methods.
+
+public class Student{
+
+    //private data member
+
+    private String college="AKG";
+
+    //getter method for college
+
+    public String getCollege(){
+        return college;
+    }
+}
+
+
+
+Write-Only class
+
+//A Java class which has only setter methods.
+
+public class Student{
+    //private data member
+
+    private String college;
+
+    //getter method for college
+
+    public void setCollege(String college){
+        this.college=college;
+    }
+}
