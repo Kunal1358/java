@@ -1,0 +1,11 @@
+throw keyword
+        The throw keyword is used to explicitly throw an exception.
+        We can throw either checked or unchecked exception in java by throw keyword.
+        The throw keyword is mainly used to throw custom exception.
+
+Syntax
+     throw exception;
+     throw new IOException("sorry device error);
+
+--> Code
+

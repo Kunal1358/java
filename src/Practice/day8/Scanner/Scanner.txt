@@ -1,0 +1,33 @@
+Scanner ->
+            Scanner class is found in java.util package.
+             Java provides various ways to read input from the keyboard, the java.util.Scanner class is one of them.
+
+             The Java Scanner class breaks the input into tokens using a delimiter which is whitespace by default.
+              It provides many methods to read and parse various primitive values.
+
+To get the instance of Java Scanner which reads input from the user, we need to pass the input stream (System.in)
+ in the constructor of Scanner class. For Example:
+
+Scanner in = new Scanner(System.in);
+
+
+
+Method	        Description
+nextInt()	    reads an int value from the user
+nextFloat()	    reads a float value form the user
+nextBoolean()	reads a boolean value from the user
+nextLine()	    reads a line of text from the user
+next()	        reads a word from the user
+nextByte()	    reads a byte value from the user
+nextDouble()	reads a double value from the user
+nextShort()	    reads a short value from the user
+nextLong()	    reads a long value from the user
+
+sc.next().charAt(0) -> Used to read single value like M or F.
+
+
+Why string inputs after integer input gets skipped in Java?
+
+This is a common problem, and it happens because the nextInt method doesn't read
+ the newline character of your input, so when you issue the command nextLine, the Scanner
+  finds the newline character and gives you that as a line.

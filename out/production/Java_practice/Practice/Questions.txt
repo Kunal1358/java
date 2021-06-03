@@ -15,3 +15,14 @@ What is the difference between static and dynamic binding?
 How downcasting is possible in Java?
 What is the purpose of a private constructor?
 What is object cloning?
+
+
+Exception Handling
+
+    What is the difference between checked and unchecked exceptions?
+    What happens behind the code int data=50/0;?
+    Why use multiple catch block?
+    Is there any possibility when finally block is not executed?
+    What is exception propagation?
+    What is the difference between throw and throws keyword?
+    What are the 4 rules for using exception handling with method overriding?
