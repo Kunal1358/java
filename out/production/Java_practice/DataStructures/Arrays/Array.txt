@@ -1,0 +1,103 @@
+Arrays
+        Arrays is a collection of items stored in contiguous memory locations.
+        Idea is to store multiple items of the same data-type together.
+
+
+In java array are dynamically allocated.
+Arrays are object in java so we can find their length by using the object property length.
+Array index starts from 0.
+The direct superclass of an array type is object.
+
+
+10 20 30 40 50 60
+
+Array.length=6
+Array[0]=10
+Array[5]=60
+
+
+One-Dimensional Arrays :
+
+declaration->
+
+type array[];
+    or
+type [] array;
+
+
+
+int array[];
+
+Although the first declaration above establishes the fact that intArray is an array variable,
+no actual array exists. It merely tells the compiler that this variable (intArray) will hold
+an array of the integer type. To link intArray with an actual, physical array of integers, you must
+allocate one using new and assign it to intArray.
+
+
+When an array is declared, only a reference of array is created.
+To actually create or give memory to array, you create an array like this
+
+type array-name[] = new type[size];
+
+you can do like this also
+
+int array[];
+array[]=new int [size];
+
+          or
+
+int array[]=new int[size];
+
+
+When an array is initialized it will automatically assign
+    0 to int array
+    false to boolean;
+    null for reference type
+
+
+
+Array Literal
+
+In a situation, where the size of the array and variables of array are already known, array literals can be used.
+
+
+int array[]=new int[]{1,2,3,5,2,26,6,3,6,553};
+
+Code 1
+Code 2
+
+What happens if we try to access element outside the array size?
+
+JVM throws ArrayIndexOutOfBoundsException to indicate that array has been accessed with an illegal index.
+The index is either negative or greater than or equal to size of array.
+
+Its an unchecked exception and comes under runtime exception.
+
+
+Multidimensional Arrays
+
+Multidimensional arrays are arrays of arrays with each element of the array holding the reference of other array.
+These are also known as Jagged Arrays.
+A multidimensional array is created by appending one set of square brackets ([]) per dimension. Examples:
+
+int[][] intArray = new int[10][20]; //a 2D array or matrix
+int[][][] intArray = new int[10][20][10]; //a 3D array
+
+
+            Time Complexity
+
+Algorithm	    Average Case	Worst Case
+
+Access	        O(1)	        O(1)
+Search	        O(n)	        O(n)
+Insertion   	O(n)	        O(n)
+Deletion	    O(n)	        O(n)
+
+
+Space Complexity
+In array, space complexity for worst case is O(n).
+
+
+
+
+

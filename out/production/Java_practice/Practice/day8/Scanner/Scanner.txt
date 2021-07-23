@@ -28,7 +28,6 @@ sc.next().charAt(0) -> Used to read single value like M or F.
 
 Why string inputs after integer input gets skipped in Java?
 
-
 This is a common problem, and it happens because the nextInt method doesn't read
  the newline character of your input, so when you issue the command nextLine, the Scanner
   finds the newline character and gives you that as a line.

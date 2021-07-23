@@ -1,0 +1,7 @@
+
+Code
+        code 1 -> Accessing the array
+        code 2 -> Array of objects
+        code 3 -> Multidimensional Arrays
+        code 4 -> Passing array to methods
+        code 5 -> Returning arrays from methods
