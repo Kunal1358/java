@@ -1,0 +1,3 @@
+Time complexity
+
+enqueue() and dequeue() is O(1)

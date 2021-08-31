@@ -1,0 +1,11 @@
+
+
+Time Complexity
+
+Singly Linked List
+
+Insertion       O(N) // for starting and end O(1)
+Deletion        O(N) // for stating O(1)
+Searching       O(N)
+Accessing       O(N)
+

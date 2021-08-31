@@ -1,0 +1,25 @@
+
+Notaions
+
+O(1)        Constant Time
+O(logN)     Logarithmic
+O(N)        Linear
+O(NlogN)    n Log n
+O(N^2)      Quadratic
+O(N^3)      Cubic
+n^O(1)      Polynomial
+2^O(n)      Exponential
+
+
+
+
+
+
+Algorithm	    Data structure	Best case	    Average case	Worst case
+Quick sort	    Array	        O(n log(n))	    O(n log(n))	    Ο(n2)
+Merge sort	    Array	        O(n log(n))	    O(n log(n))	    O(n log(n))
+Heap sort	    Array	        O(n)	        O(n log(n))	    O(n log(n))
+Smooth sort	    Array	        O(n)	        O(n log(n))	    O(n log(n))
+Bubble sort	    Array	        O(n)	        Ο(n2)	        Ο(n2)
+Insertion sort	Array	        O(n)	        Ο(n2)	        Ο(n2)
+Selection sort	Array	        Ο(n2)	        Ο(n2)	        Ο(n2)

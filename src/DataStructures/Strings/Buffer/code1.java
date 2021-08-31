@@ -20,7 +20,7 @@ public class code1 {
         System.out.println(str2.capacity());
 
         // Append
-        // str.append("value");
+        // str.add("value");
         // original string get changed
         str1.append("value");
         System.out.println(str1);

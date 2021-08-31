@@ -5,3 +5,8 @@ Code
         code 3 -> Multidimensional Arrays
         code 4 -> Passing array to methods
         code 5 -> Returning arrays from methods
+
+
+        https://javaconceptoftheday.com/how-to-find-all-pairs-of-elements-in-an-array-whose-sum-is-equal-to-a-given-number/
+        https://javaconceptoftheday.com/how-to-find-continuous-sub-array-whose-sum-is-equal-to-given-number/
+        https://www.geeksforgeeks.org/top-50-array-coding-problems-for-interviews/

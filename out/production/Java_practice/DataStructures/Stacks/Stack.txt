@@ -1,0 +1,9 @@
+
+// Time complexity
+
+push()
+pop()
+peek()
+isEmpty()
+
+All take O(1) as we do not run any loop
