@@ -2,9 +2,9 @@ package OOPs.Inheritance;
 
 /*
 
-Static methods in Java are inherited, but can not be overridden. If you declare the same method in a subclass,
-you hide the superclass method instead of overriding it. Static methods are not polymorphic. At the compile time,
- the static method will be statically linked.
+Static methods in Java are inherited, but can not be overridden.
+If you declare the same method in a subclass,you hide the superclass method instead of overriding it.
+Static methods are not polymorphic. At the compile time, the static method will be statically linked.
 
  */
 

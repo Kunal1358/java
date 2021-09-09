@@ -12,7 +12,7 @@ public class Code8 {
         if (str==null || str.length()<1){
             return ;
         }else{
-            System.out.println(str.charAt(str.length()-1));
+            System.out.print(str.charAt(str.length()-1)+ " ");
             rev(str.substring(0,str.length()-1));
         }
     }
