@@ -14,7 +14,7 @@ public class Code14 {
             for(int j=i+1;j<n;j++) {
                 if (curr_sum == sum) {
                 int p = j - i;
-                System.out.println("Pair found btw " + i + " and " + p);
+                System.out.println("TestPair found btw " + i + " and " + p);
                 return 1;
             }
                 if(curr_sum>sum|| j==n){
