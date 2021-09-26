@@ -19,7 +19,7 @@ public class code1 {
         }
         System.out.println(sum);
 
-        // if we want to print the single digit values
+        // if we want to printDFS the single digit values
 
         while(num2>0){
             n=num2%10;

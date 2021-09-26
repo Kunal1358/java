@@ -73,7 +73,7 @@ class LinkedList {
       list.head=  list.reverse(list.head);
 
 
-     //   list.print();
+     //   list.printDFS();
 
     }
 

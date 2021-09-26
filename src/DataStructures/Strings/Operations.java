@@ -43,7 +43,7 @@ public class Operations {
 
         //Char at certain position
         //s1.charAt();
-        // if space is at position it doesn't print anything
+        // if space is at position it doesn't printDFS anything
         System.out.println(s1.charAt(6));
 
         //Substring

@@ -448,7 +448,7 @@ public class BST {
 //        LinkedListNode<Integer> node=BstToLL(root);
 //
 //        while(node!=null){
-//            System.out.print(node.data+ " ");
+//            System.out.printDFS(node.data+ " ");
 //            node=node.next;
 //        }
 

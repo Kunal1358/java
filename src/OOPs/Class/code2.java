@@ -13,6 +13,6 @@ public class code2 {
 
 class print{
     void print(){
-        System.out.println("print");
+        System.out.println("printDFS");
     }
 }

@@ -1,0 +1,42 @@
+Interface ->
+            Interface in java is a blueprint of class.
+            It has static constants and abstract methods.
+
+
+Uses
+    It is used to achieve abstraction.
+    By interface, we can support the functionality of multiple inheritance.
+    It can be used to achieve loose coupling.
+
+** All fields are public static and final by default **
+
+
+interface printable{
+    void print();
+    int n=5;
+}
+
+Compiler ->
+
+interface printable{
+    public abstract void print();
+    public static final int n=5;
+}
+
+
+Relationship
+
+    class   interface   interface
+      ^         ^           ^
+      |         |           |
+   extends  implements   extends
+      |         |           |
+      |         |           |
+    class   interface   interface
+
+
+--> Example1
+--> Example2
+
+multiple inheritance
+

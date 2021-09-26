@@ -1,0 +1,24 @@
+Final Keyword ->
+        Final Keyword is used to restrict the user.
+
+Final can be
+        variable
+        class
+        method
+
+** We cannot extends the final class. **
+
+Is final method inherited?
+        Yes but you cannot override it.
+
+Can we initialize blank final variable?
+        Yes but only in ctr.
+
+static blank final variable
+        A static final variable that is not initialized at the time
+        of declaration is known as static blank final variable.
+        It can be initialized only in static block.
+
+Can we declare a constructor final?
+        No, because constructor is never inherited.
+

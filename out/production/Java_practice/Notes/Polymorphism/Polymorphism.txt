@@ -1,0 +1,29 @@
+Polymorphism ->
+        Polymorphism in java is as method by which we can perform a single action in different ways
+        Poly -> many
+        morph -> forms
+
+Types of Polymorphism
+    compile-time
+    run-time
+
+If you overload a static method it is known as compile-time Polymorphism.
+
+Runtime polymorphism or Dynamic Method Dispatch is a process in which a
+ call to an overridden method is resolved at runtime rather than compile-time.
+
+Upcasting
+    If a reference variable of parent class refer to the object of child class
+
+
+class A(){
+
+}
+
+class B(){
+
+}
+
+A obj=new B(); // This is called Upcasting
+
+

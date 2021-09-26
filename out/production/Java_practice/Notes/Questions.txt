@@ -12,7 +12,7 @@ What is the usage of a blank final variable?
 What is a marker or tagged interface?
 What is runtime polymorphism or dynamic method dispatch?
 What is the difference between static and dynamic binding?
-How downcasting is possible in Java?
+How down casting is possible in Java?
 What is the purpose of a private constructor?
 What is object cloning?
 

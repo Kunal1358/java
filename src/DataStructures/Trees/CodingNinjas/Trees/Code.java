@@ -119,7 +119,7 @@ public class Code {
         }return ans;
     }
 
-    // print all nodes at depth k
+    // printDFS all nodes at depth k
     public static void printAtK(TreeNode<Integer> root, int k){
         if(k<0)
             return;
@@ -269,7 +269,7 @@ public class Code {
         TreeNode<Integer> root=takeInputLevelWise();
 
         //System.out.println("Printing Tree ");
-        //print(root);
+        //printDFS(root);
 //
 //        System.out.println("No of nodes is "+ numCount(root));
 //

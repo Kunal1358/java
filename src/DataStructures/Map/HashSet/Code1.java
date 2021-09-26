@@ -37,7 +37,7 @@ public class Code1 {
 
 /*
 
-It print map in sorted order
+It printDFS map in sorted order
 It does not contain duplicate values
 
 //  time comp for all is O(1)
