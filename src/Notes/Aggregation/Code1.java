@@ -16,7 +16,7 @@ class circle{
     double area(int radius){
         op=new operation();
 
-        int square=op.square(radius); //code reusability (i.e. delegates the method call).
+        int square=op.square(radius); //QuickSortCode reusability (i.e. delegates the method call).
         return pi*square;
     }
 

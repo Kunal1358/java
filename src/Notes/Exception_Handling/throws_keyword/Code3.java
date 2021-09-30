@@ -17,5 +17,5 @@ public class Code3{
     }
 }
 
-// In case you handle the exception, the code will be executed fine whether
+// In case you handle the exception, the QuickSortCode will be executed fine whether
 // exception occurs during the program or not.

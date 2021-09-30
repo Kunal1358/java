@@ -12,7 +12,7 @@ public class First_Code {
 
 * Flow of execution  *
 
-java code -> compiler -> byte code
+java QuickSortCode -> compiler -> byte QuickSortCode
 simple.java -> compiler -> simple.class
 
 * Keywords *
@@ -37,7 +37,7 @@ Class file
 Class loader
 r
 Runtime
-HardwareByte code verified
+HardwareByte QuickSortCode verified
 interpreter
 
  */

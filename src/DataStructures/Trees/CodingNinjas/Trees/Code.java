@@ -259,14 +259,18 @@ public class Code {
     public static void main(String[] args) throws Exception {
 
         Scanner sc=new Scanner(System.in);
-        //Uncomment code above
+        //Uncomment QuickSortCode above
         //TreeNode<Integer> root=takeInput();
 
-        //recursively
-        //TreeNode<Integer> root=takeInput(sc);
+//        recursively
+        TreeNode<Integer> root=takeInput(sc);
+        print(root);
+
+        System.out.println();
+        System.out.println(heightOfTree(root));
 
         // level Wise
-        TreeNode<Integer> root=takeInputLevelWise();
+//        TreeNode<Integer> root=takeInputLevelWise();
 
         //System.out.println("Printing Tree ");
         //printDFS(root);
@@ -285,9 +289,9 @@ public class Code {
 //          System.out.println("Level Wise Traversal of a tree");
 //          printLevelWise(root);
 
-        System.out.println("Post Order Traversal of a tree");
-        postOrder(root);
-        System.out.println();
+//        System.out.println("Post Order Traversal of a tree");
+//        postOrder(root);
+//        System.out.println();
 
         //Sum of all Nodes
         //System.out.println("Sum of All Nodes = " + sumOfAllNodes(root));

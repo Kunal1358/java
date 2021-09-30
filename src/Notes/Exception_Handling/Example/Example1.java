@@ -15,7 +15,7 @@ public class Example1 {
         }
         finally {
             // executes if an exception is handled or not
-            System.out.println("Check Your code");
+            System.out.println("Check Your QuickSortCode");
         }
 
     }

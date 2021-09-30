@@ -23,10 +23,10 @@ Non-primitive types can be used to call methods to perform certain operations, w
 
 A primitive type has always a value, while non-primitive types can be null .
 
-* * java uses Unicode system not ASCII code system. The \u0000 is the lowest range of Unicode system. * *
+* * java uses Unicode system not ASCII QuickSortCode system. The \u0000 is the lowest range of Unicode system. * *
 
 
-A particular code value corresponds to different letters in the various language standards.
+A particular QuickSortCode value corresponds to different letters in the various language standards.
 The encodings for languages with large character sets have variable length.Some common characters
 are encoded as single bytes, other require two or more byte.
 

@@ -87,6 +87,10 @@ public class BST {
 
     public static void printLevelWise(BinaryTreeNode<Integer> root) throws Exception {
 
+        if(root==null){
+            return;
+        }
+
         QueueUsingLL<BinaryTreeNode<Integer>> pendingNodes=new QueueUsingLL<>();
 
         pendingNodes.enQueue(root);
@@ -163,21 +167,20 @@ public class BST {
     }
 
     public static void printInRange(BinaryTreeNode<Integer> root, int min, int max){
+
         if(root==null){
             return;
         }
 
         if(min<root.data){
-            printInRange(root.left, min, max);
-        }
-        if(root.data<= max && root.data>= min){
-            System.out.println(root.data+ " ");
-        }
-        if(max>root.data){
-            printInRange(root.right, min, max);
+            printInRange(root.left,min,max);
         }
 
+        if(min<=root.data && max>=root.data){
+            System.out.print(root.data+" ");
+        }
 
+        printInRange(root.right,min,max);
     }
 
     public static int max(BinaryTreeNode<Integer> root){
@@ -329,10 +332,10 @@ public class BST {
 
     public static LinkedListNode<Integer> BstToLL(BinaryTreeNode<Integer>root){
 
-        return constructLinkedListhelper(root).head;
+        return constructLinkedListHelper(root).head;
     }
 
-    public static PairOFElemt constructLinkedListhelper(BinaryTreeNode<Integer> root){
+    public static PairOFElemt constructLinkedListHelper(BinaryTreeNode<Integer> root){
 
         if(root==null){
             PairOFElemt pair=new PairOFElemt();
@@ -340,8 +343,8 @@ public class BST {
         }
 
         LinkedListNode<Integer> newNode=new LinkedListNode<>(root.data);
-        PairOFElemt leftList=constructLinkedListhelper(root.left);
-        PairOFElemt rightList=constructLinkedListhelper(root.right);
+        PairOFElemt leftList= constructLinkedListHelper(root.left);
+        PairOFElemt rightList= constructLinkedListHelper(root.right);
 
         PairOFElemt pair=new PairOFElemt();
         if(leftList.tail!=null){
@@ -363,6 +366,32 @@ public class BST {
         }
         return pair;
 
+    }
+
+    private static int counter=0;
+    private static LinkedListNode<Integer> head;
+    private static LinkedListNode<Integer> tail;
+
+    public static LinkedListNode<Integer> BstToSortedLL(BinaryTreeNode<Integer> root){
+        if(root==null){
+            return null;
+        }
+        LinkedListNode<Integer> newNode=new LinkedListNode<>(root.data);
+        BstToSortedLL(root.left);
+
+        if(counter==1){
+            tail.next=newNode;
+            tail=tail.next;
+        }
+        if(counter==0){
+            counter++;
+            if(counter==1){
+                head=newNode;
+                tail=head;
+            }
+        }
+        BstToSortedLL(root.right);
+        return head;
     }
 
     private static BinaryTreeNode<Integer> findLCA(BinaryTreeNode<Integer>root,int a,int b){
@@ -429,7 +458,7 @@ public class BST {
 //        System.out.println("Print in range");
 //        printInRange(root,10,30);
 
-//        System.out.println("Is Bst "+ isBst2(root).first);
+        System.out.println("Is Bst "+ isBst2(root).first);
 
 
 //        int arr[]={1,2,3,4,5,6,7};
@@ -454,10 +483,10 @@ public class BST {
 
 //        System.out.println("LCA");
 //        System.out.println(getLCA(root,12,78));
-
-        System.out.println("Replace node with sum value");
-        replaceWithLargerSumNode(root);
-        printLevelWise(root);
+//
+//        System.out.println("Replace node with sum value");
+//        replaceWithLargerSumNode(root);
+//        printLevelWise(root);
 
 
     }

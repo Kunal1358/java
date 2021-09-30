@@ -1,7 +1,5 @@
 package DataStructures.Graphs;
 
-import jdk.internal.org.objectweb.asm.tree.InnerClassNode;
-
 import java.util.*;
 
 public class Code {
@@ -136,7 +134,7 @@ public class Code {
                 if(edge[i][ei]==1 && !visited[i]){ // other Logic
                     return true;
                 }
-//                if(i==ei){ // Code not working
+//                if(i==ei){ // MergeSortCode not working
 //                    return true;
 //                }
                 hasPathDFSHelper(edge,i,ei,visited);
@@ -272,37 +270,36 @@ public class Code {
         }return null;
     }
 
-    public static ArrayList<ArrayList<Integer>> printConnectedComponents(int edges[][]){
+    public static ArrayList<ArrayList<Integer>> ReturnAllConnectedComponents(int edges[][]){
 
         boolean visited[]=new boolean[edges.length];
-        ArrayList<ArrayList<Integer>> bigPath=new ArrayList<>();
+        ArrayList<ArrayList<Integer>> Output=new ArrayList<>();
 
         for(int i=0;i< edges.length;i++){
             if(!visited[i]){
-                ArrayList<Integer> path=printConnectedComponentsHelper(edges,i,visited);
-                System.out.println("Inside Func  "+ path);
-                bigPath.add(path);
+                ArrayList<Integer> smallAns=new ArrayList<>();
+                ReturnAllConnectedComponentsHelper(edges,i,visited,smallAns);
+                Output.add(smallAns);
             }
-        }return bigPath;
+        }
+        return Output;
 
     }
 
-    public static ArrayList<Integer> printConnectedComponentsHelper(int edges[][],int si,boolean visited[]){
+    private static void ReturnAllConnectedComponentsHelper(int[][] edges, int si, boolean[] visited, ArrayList<Integer> list) {
 
-        ArrayList<Integer> path=new ArrayList<>();
-        path.add(si);
+        list.add(si);
         visited[si]=true;
 
-        for(int i=0;i< edges.length;i++){
-            if(edges[i][si]==1 && !visited[i]){
-                path.add(i);
-                printConnectedComponentsHelper(edges,i,visited);
+        for(int i=0;i<edges.length;i++){
+            if(i==si){
+                continue;
             }
-        }return path;
-
+            if(edges[i][si]==1 && !visited[i]){
+                ReturnAllConnectedComponentsHelper(edges,i,visited,list);
+            }
+        }
     }
-
-
 
 
     public static void main(String[] args) {
@@ -330,11 +327,11 @@ public class Code {
 //        System.out.println("Printing path BFS");
 //        printBFS(edges);
 
-        System.out.println();
-        System.out.println("Print All Connected Components DFS");
-        ArrayList<ArrayList<Integer>> components=printConnectedComponents(edges);
-        System.out.println(components);
-//
+//        System.out.println();
+//        System.out.println("Print All Connected Components DFS");
+//        ArrayList<ArrayList<Integer>> components=ReturnAllConnectedComponents(edges);
+//        System.out.println(components);
+////
 //        for (int i = 0; i < edges.length; i++) {
 //            for (int j = 0; j < components[i].size(); j++) {
 //                System.out.print(components[i].get(j) + " ");
@@ -349,9 +346,9 @@ public class Code {
 //
 //        System.out.println();
 //        System.out.println("printing path BFS");
-//        ArrayList<Integer> path2= getPathBFS(edges,1,3);
+//        ArrayList<Integer> path2= getPathBFS(edges,0,3);
 //        System.out.println(path2);
-//
+////
 
 //        System.out.println();
 //        System.out.println();
@@ -365,6 +362,22 @@ public class Code {
 //
 //        System.out.println();
 //        System.out.println("Has path BFS "+ hasPathBFS(edges,1,3));
+
+        System.out.println("Printing All Connected Components");
+        ArrayList<ArrayList<Integer>>output= ReturnAllConnectedComponents(edges);
+        System.out.println(output);
+
+//         for(int i=0;i< output.size();i++){
+//            Collections.sort(output.get(i));
+//         }
+//
+//        for (int i = 0; i < output.size(); i++) {
+//            for (int j = 0; j < output.get(i).size(); j++) {
+//                System.out.print(output.get(i).get(j) + " ");
+//            }
+//            System.out.println();
+//        }
+
 
 
     }
@@ -380,5 +393,16 @@ public class Code {
 1 2
 2 3
 4 5
+
+
+11 8
+0 1
+0 2
+1 2
+2 3
+4 5
+6 7
+7 8
+9 10
 
  */

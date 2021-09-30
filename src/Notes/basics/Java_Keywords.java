@@ -11,7 +11,7 @@ abstract: Java abstract keyword is used to declare abstract class. Abstract clas
  the implementation of interface. It can have abstract and non-abstract methods.
 
 continue: Java continue keyword is used to continue the loop. It continues the current flow of
-  the program and skips the remaining code at the specified condition.
+  the program and skips the remaining QuickSortCode at the specified condition.
 
 enum: Java enum keyword is used to define a fixed set of constants. Enum constructors are always private or default.
 

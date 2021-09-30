@@ -17,4 +17,4 @@ class show{
 }
 
 // default ctr is called when the new keyword is used.
-// It will execute the code inside that statement.
+// It will execute the QuickSortCode inside that statement.
